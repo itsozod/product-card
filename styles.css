@@ -10,7 +10,7 @@ body {
 }
 .img {
     width: 220px;
-    height: 350px;
+    height: 400px;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
@@ -26,12 +26,14 @@ section {
 .right {
     background-color: white;
     width: 220px;
+    height: 400px;
     margin-top: -4px;
     padding: 18px;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 .perfume {
+    margin-top: -5px;
     margin-bottom: 15px;
     font-size: 14px;
     color: hsl(228, 12%, 48%);
@@ -43,11 +45,13 @@ h1 {
 }
 p {
     font-size: 13px;
+    padding-top: 20px;
     color: hsl(228, 12%, 48%);
 }
 .container {
     margin-top: 25px;
     display: flex;
+    padding: 20px 10px;
     gap: 15px;
 }
 .price1 {
@@ -120,5 +124,29 @@ button:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+@media screen and (max-width: 365px) {
+    .left .img {
+        width: 320px;
+    }
+    .right {
+        width: 320px;
+    }
+}
+@media screen and (max-width: 335px) {
+    .left .img {
+        width: 300px;
+    }
+    .right {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 315px) {
+    .left .img {
+        width: 270px;
+    }
+    .right {
+        width: 270px;
     }
 }
